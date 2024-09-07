@@ -1,0 +1,229 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 400px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.perfil-header {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-info {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais opaco */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra para destacar mais */
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #fff;
+}
+
+/* Seções */
+section {
+    margin: 20px;
+}
+
+/* Informações pessoais e postagens */
+.informacoes-pessoais,
+.postagens {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.postagem {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.postagem:last-child {
+    border-bottom: none;
+}
+
+/* Estatísticas do perfil */
+.perfil-estatisticas {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.estatistica {
+    text-align: center;
+}
+
+.estatistica strong {
+    font-size: 24px;
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #c2c2c2;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Modais */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative; /* Adiciona posição relativa ao conteúdo do modal */
+    width: auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.fechar {
+    position: absolute; /* Coloca o "X" em posição absoluta dentro do modal */
+    top: 10px; /* Ajusta a posição vertical */
+    right: 10px; /* Ajusta a posição horizontal para ficar no canto superior direito */
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.imagem-alteracao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-alteracao-container img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.imagem-quadrada {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.opcoes-alteracao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo específico para modal de imagem */
+/* Estilo específico para modal de imagem */
+.modal-content {
+    width: auto;
+    max-width: 80%; /* Define uma largura máxima menor para o modal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Ajuste o padding conforme necessário */
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.modal-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal-botoes button, .modal-botoes input[type="file"] {
+    width: 80%;
+    max-width: 300px;
+}
+
+#camera {
+    width: 100%;
+    height: auto;
+}
+
+#capturar {
+    margin-top: 10px;
+}
